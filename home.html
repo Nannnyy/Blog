@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 </head>
+
 <body>
-    
-    <header></header>
+
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img src="assets/microblog-logo.svg" alt="Blog Logo">Microblog
+        </div>
+
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item"> <a href="a" class="navbar__link">Recente</a></li>
+            <li class="navbar__navigation-item"> <a href="a" class="navbar__link">calendário</a></li>
+        </ul>
+
+    </header>
 
     <main>
 
         <section>
             <h1>Campo do texto</h1>
+            <form class="form" action="/entry" method="post">
+                <p class="form__input">
+                    <label class="form__label" for="entry">Texto: </label>
+                    <textarea class="form__textarea" name="entry" id="entry"></textarea>
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
         <section>
@@ -33,4 +52,5 @@
     <footer></footer>
 
 </body>
+
 </html>
